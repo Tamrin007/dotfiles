@@ -1,0 +1,9 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+
+- clean: ['~', '~/.config']
+
+- link:
+    ~/.config/nvim: config/nvim/
