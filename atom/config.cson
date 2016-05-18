@@ -1,0 +1,21 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "6ddbde88-b083-4f18-94ee-abf676be7f8e"
+  "autoclose-html": {}
+  core:
+    themes: [
+      "seti-ui"
+      "seti-syntax"
+    ]
+  editor:
+    fontFamily: "Source Han Code JP"
+    invisibles: {}
+    tabLength: 4
+    tabType: "soft"
+  "exception-reporting":
+    userId: "cafebedf-35aa-bf8f-7835-5979a9101d7d"
+  "save-session":
+    dataSaveFolder: "/Users/tamrin/.atom/packages/save-session/projects"
+  welcome:
+    showOnStartup: false

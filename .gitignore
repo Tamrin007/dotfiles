@@ -29,3 +29,17 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+### Atom ###
+
+.apm/
+.node-gyp/
+blob-store/
+compile-cache/
+packages/
+storage/
+atom/.gitignore
+projects.cson
+npm-debug.log
+.apmrc
+.apmrc-e
+.apmrc.bak
