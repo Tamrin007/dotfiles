@@ -8,3 +8,5 @@
 
 - link:
     ~/.config/nvim: config/nvim/
+    ~/.atom: atom/
+    ~/.slate: slate
