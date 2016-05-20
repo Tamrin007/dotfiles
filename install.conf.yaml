@@ -7,6 +7,8 @@
 - clean: ['~', '~/.config']
 
 - link:
-    ~/.config/nvim: config/nvim/
-    ~/.atom: atom/
+    ~/.config/nvim: config/nvim
+    ~/.atom: atom
     ~/.slate: slate
+    ~/.zsh: zsh
+    ~/.zshrc: zshrc
