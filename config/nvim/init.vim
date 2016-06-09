@@ -136,6 +136,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'plasticboy/vim-markdown'
 Plug 'kannokanno/previm'
 Plug 'tyru/open-browser.vim'
+Plug 'fatih/vim-go'
 call plug#end()
 
 " colorscheme
