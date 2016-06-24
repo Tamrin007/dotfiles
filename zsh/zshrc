@@ -1,0 +1,55 @@
+source ~/.zplug/init.zsh
+
+zplug "zsh-users/zsh-history-substring-search"
+zplug "plugins/git", from:oh-my-zsh, if:"(( $+commands[git] ))", nice:10
+zplug "zsh-users/zsh-syntax-highlighting", nice:10
+zplug "themes/sorin", from:oh-my-zsh
+zplug "zsh-users/zsh-completions"
+
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+
+fi
+
+zplug load --verbose
+
+# 履歴ファイルの保存先
+export HISTFILE=${HOME}/.zsh_history
+
+# メモリに保存される履歴の件数
+export HISTSIZE=1000
+
+# 履歴ファイルに保存される履歴の件数
+export SAVEHIST=100000
+
+# 重複を記録しない
+setopt hist_ignore_dups
+
+# 開始と終了を記録
+setopt EXTENDED_HISTORY
+
+# substring-search の設定
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+# Aliases
+alias vim='nvim'
+alias rm='trash'
+alias cp='cp -i'
+alias mv='mv -i'
+alias mkdir='mkdir -p'
+
+# Pathes
+export XDG_CONFIG_HOME=~/.config
+export XDG_DATA_HOME=~/.local/share
+export LANG=ja_JP.UTF-8
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init -)"
+export PATH=$PATH:`npm bin -g`
+
+# Proxy Setting
+source ~/Dropbox/myCommands/setproxy
