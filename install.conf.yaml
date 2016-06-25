@@ -9,5 +9,5 @@
 - link:
     ~/.config/nvim: config/nvim
     ~/.atom: atom
-    ~/.slate: zsh/slate
+    ~/.slate: slate/slate
     ~/.zshrc: zsh/zshrc

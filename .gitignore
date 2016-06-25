@@ -43,3 +43,6 @@ npm-debug.log
 .apmrc
 .apmrc-e
 .apmrc.bak
+
+### neovim ###
+config/nvim/plugged/
