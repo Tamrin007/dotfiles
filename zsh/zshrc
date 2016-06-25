@@ -3,7 +3,9 @@ source ~/.zplug/init.zsh
 zplug "zsh-users/zsh-history-substring-search"
 zplug "plugins/git", from:oh-my-zsh, if:"(( $+commands[git] ))", nice:10
 zplug "zsh-users/zsh-syntax-highlighting", nice:10
-zplug "themes/sorin", from:oh-my-zsh
+# zplug "themes/sorin", from:oh-my-zsh
+zplug "mafredri/zsh-async"
+zplug "sindresorhus/pure"
 zplug "zsh-users/zsh-completions"
 
 # Install plugins if there are plugins that have not been installed
