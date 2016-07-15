@@ -5,9 +5,13 @@ if [ -d ${HOME}/Dropbox ] ; then
      source ~/Dropbox/myCommands/setproxy
 fi
 
+autoload -Uz compinit chpwd_recent_dirs cdr add-zsh-hook
+compinit add-zsh-hook chpwd chpwd_recent_dirs
+
 zplug "zsh-users/zsh-history-substring-search"
 zplug "plugins/git", from:oh-my-zsh, if:"(( $+commands[git] ))", nice:10
 zplug "zsh-users/zsh-syntax-highlighting", nice:10
+zplug "plugins/golang", from:oh-my-zsh
 # zplug "themes/sorin", from:oh-my-zsh
 zplug "mafredri/zsh-async"
 zplug "sindresorhus/pure"
@@ -74,6 +78,29 @@ bindkey '^x^k' anyframe-widget-kill
 bindkey '^xe' anyframe-widget-insert-git-branch
 bindkey '^x^e' anyframe-widget-insert-git-branch
 
+# completion
+zstyle ':completion:*:default' menu select=2
+zstyle ':completion:*' verbose yes
+zstyle ':completion:*' completer _expand _complete _match _prefix _approximate _list _history
+zstyle ':completion:*:options' description 'yes'
+# グループ名に空文字列を指定すると，マッチ対象のタグ名がグループ名に使われる。
+# したがって，すべての マッチ種別を別々に表示させたいなら以下のようにする
+zstyle ':completion:*' group-name ''
+
+# LS_COLORSを設定しておく
+export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
+# ファイル補完候補に色を付ける
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+
+#cdを打ったら自動的にlsを打ってくれる関数
+function cd(){
+    builtin cd $@ && ls -G;
+}
+
+# zsh-completions 読み込み
+fpath=(/usr/local/share/zsh-completions $fpath)
+autoload -U compinit; compinit
+
 # Aliases
 alias vim='nvim'
 alias rm='trash'
@@ -92,6 +119,4 @@ fi
 if builtin command -v npm > /dev/null; then
   export PATH=$PATH:`npm bin -g`
 fi
-
-autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
-add-zsh-hook chpwd chpwd_recent_dirs
+export GOPATH=$HOME/go

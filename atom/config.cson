@@ -15,7 +15,11 @@
     tabType: "soft"
   "exception-reporting":
     userId: "cafebedf-35aa-bf8f-7835-5979a9101d7d"
+  "git-diff":
+    showIconsInEditorGutter: true
+  "go-config": {}
   "save-session":
     dataSaveFolder: "/Users/tamrin/.atom/packages/save-session/projects"
+  term3: {}
   welcome:
     showOnStartup: false

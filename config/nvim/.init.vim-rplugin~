@@ -1,10 +1,6 @@
 " python3 plugins
-call remote#host#RegisterPlugin('python3', '/Users/tamrin/.config/nvim/plugged/unite.vim/rplugin/python3/__pycache__', [
-     \ ])
 call remote#host#RegisterPlugin('python3', '/Users/tamrin/.config/nvim/plugged/deoplete.nvim/rplugin/python3/deoplete', [
-     \ ])
-call remote#host#RegisterPlugin('python3', '/Users/tamrin/.config/nvim/plugged/deoplete.nvim/rplugin/python3/deoplete.py', [
-      \ {'sync': v:true, 'name': '_deoplete', 'type': 'function', 'opts': {}},
+      \ {'sync': v:true, 'name': '_deoplete', 'opts': {}, 'type': 'function'},
      \ ])
 
 
