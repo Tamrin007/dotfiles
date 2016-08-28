@@ -7,6 +7,14 @@ filetype indent plugin on
 " シンタックスハイライトを有効化
 syntax on
 
+" TrueColor を ON
+if has('patch-7.4.1778')
+  set guicolors
+endif
+if has('nvim')
+  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+endif
+
 " バッファを保持しなくても他のバッファを表示できるようにする
 set hidden
 
@@ -146,6 +154,10 @@ else
     colorscheme desert
 endif
 
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+
 " indent guide
 let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_start_level=1
@@ -162,3 +174,4 @@ au BufRead, BufNewFile *.md set filetype=markdown
 
 " カーソルラインのハイライトをクリア
 hi clear CursorLine
+
