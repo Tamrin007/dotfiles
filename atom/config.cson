@@ -2,6 +2,7 @@
   "atom-beautify":
     general:
       _analyticsUserId: "6ddbde88-b083-4f18-94ee-abf676be7f8e"
+    html: {}
   "autoclose-html": {}
   core:
     packagesWithKeymapsDisabled: []

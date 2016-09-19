@@ -60,8 +60,6 @@ bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
 # anyframe のキーバインド
-bindkey '^a' anyframe-widget-select-widget
-
 bindkey '^xb' anyframe-widget-cdr
 bindkey '^x^b' anyframe-widget-checkout-git-branch
 
