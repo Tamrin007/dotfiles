@@ -30,6 +30,8 @@
     errorPanelHeight: 24
   "save-session":
     dataSaveFolder: "/Users/tamrin/.atom/packages/save-session/projects"
+  "seti-syntax": {}
+  "seti-ui": {}
   term3: {}
   welcome:
     showOnStartup: false

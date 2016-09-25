@@ -10,9 +10,8 @@ zplug "zsh-users/zsh-history-substring-search"
 zplug "plugins/git", from:oh-my-zsh, if:"(( $+commands[git] ))", nice:10
 zplug "zsh-users/zsh-syntax-highlighting", nice:10
 zplug "plugins/golang", from:oh-my-zsh, nice:10
-# zplug "themes/sorin", from:oh-my-zsh
 zplug "mafredri/zsh-async"
-zplug "sindresorhus/pure"
+zplug "sindresorhus/pure", nice:10
 zplug "zsh-users/zsh-completions"
 zplug "Tarrasch/zsh-bd"
 zplug "motemen/ghq", \
@@ -136,5 +135,4 @@ export GOPATH=$HOME/ghq
 export PATH=$PATH:$GOPATH/bin
 export GOROOT=$HOME/.anyenv/envs/goenv/versions/1.7
 export PATH=$PATH:$GOROOT/bin
-export PGDATA=/usr/local/var/postgres
 

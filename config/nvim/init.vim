@@ -81,59 +81,15 @@ map Y y$
 " <C_L> で検索後の強調表示を解除
 nnoremap <C-L> :nohl<CR><C-L>
 
-" 日本語周りの設定
-if &encoding !=# 'utf-8'
-    set encoding=japan
-    set fileencoding=japan
-endif
-if has('iconv')
-    let s:enc_euc = 'euc-jp'
-    let s:enc_jis = 'iso-2022-jp'
-    if iconv("\x87\x64\x87\x6a", 'cp932', 'eucjp-ms') ==# "\xad\xc5\xad\xcb"
-        let s:enc_euc = 'eucjp-ms'
-        let s:enc_jis = 'iso-2022-jp-3'
-    elseif iconv("\x87\x64\x87\x6a", 'cp932', 'euc-jisx0213') ==# "\xad\xc5\xad\xcb"
-        let s:enc_euc = 'euc-jisx0213'
-        let s:enc_jis = 'iso-2022-jp-3'
-    endif
-    if &encoding ==# 'utf-8'
-        let s:fileencodings_default = &fileencodings
-        if has('mac')
-            let &fileencodings = s:enc_jis .','. s:enc_euc
-            let &fileencodings = &fileencodings .','. s:fileencodings_default
-        else
-            let &fileencodings = s:enc_jis .','. s:enc_euc .',cp932'
-            let &fileencodings = &fileencodings .','. s:fileencodings_default
-        endif
-        unlet s:fileencodings_default
-    else
-        let &fileencodings = &fileencodings .','. s:enc_jis
-        set fileencodings+=utf-8,ucs-2le,ucs-2
-        if &encoding =~# '^\(euc-jp\|euc-jisx0213\|eucjp-ms\)$'
-            set fileencodings+=cp932
-            set fileencodings-=euc-jp
-            set fileencodings-=euc-jisx0213
-            set fileencodings-=eucjp-ms
-            let &encoding = s:enc_euc
-            let &fileencoding = s:enc_euc
-        else
-            let &fileencodings = &fileencodings .','. s:enc_euc
-        endif
-    endif
-    unlet s:enc_euc
-    unlet s:enc_jis
-endif
-
 " プラグイン
 call plug#begin('~/.config/nvim/plugged')
-Plug 'Shougo/unite.vim'
+Plug 'Shougo/denite.nvim'
 Plug 'scrooloose/nerdtree'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'Townk/vim-autoclose'
 Plug 'tpope/vim-endwise'
 Plug 'itchyny/lightline.vim'
-Plug 'Shougo/deoplete.nvim'
 Plug 'othree/html5.vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'jelera/vim-javascript-syntax'
@@ -154,9 +110,13 @@ else
     colorscheme desert
 endif
 
+" go
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
-let g:go_highlight_structs = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_types = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
 
 " indent guide
 let g:indent_guides_enable_on_vim_startup=1
