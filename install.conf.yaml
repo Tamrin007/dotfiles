@@ -11,3 +11,5 @@
     ~/.atom: atom
     ~/.slate: slate/slate
     ~/.zshrc: zsh/zshrc
+    ~/.gitconfig: git/gitconfig
+    ~/.gitignore: git/gitignore
