@@ -136,3 +136,4 @@ export PATH=$PATH:$GOPATH/bin
 export GOROOT=$HOME/.anyenv/envs/goenv/versions/1.7
 export PATH=$PATH:$GOROOT/bin
 
+function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}

@@ -81,6 +81,9 @@ map Y y$
 " <C_L> で検索後の強調表示を解除
 nnoremap <C-L> :nohl<CR><C-L>
 
+" md の折りたたみを無効化
+let g:vim_markdown_folding_disabled=1
+
 " プラグイン
 call plug#begin('~/.config/nvim/plugged')
 Plug 'Shougo/denite.nvim'
@@ -122,7 +125,7 @@ let g:go_highlight_build_constraints = 1
 let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_start_level=1
 let g:indent_guides_auto_colors=0
-let g:indent_guides_guide_size=2
+let g:indent_guides_guide_size=4
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=233
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=234
 
