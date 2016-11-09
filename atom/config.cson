@@ -6,13 +6,16 @@
   "autoclose-html": {}
   core:
     packagesWithKeymapsDisabled: []
+    telemetryConsent: "limited"
     themes: [
       "seti-ui"
       "seti-syntax"
     ]
   editor:
     fontFamily: "Source Han Code JP"
+    fontSize: 16
     invisibles: {}
+    showInvisibles: true
     tabLength: 4
     tabType: "soft"
   "exception-reporting":
@@ -24,6 +27,9 @@
   "go-debug":
     panelInitialVisible: false
   "go-imports": {}
+  "go-plus":
+    currentPanelHeight: "16.55629139072848vh"
+    panelDisplayMode: "closed"
   godef:
     show: "Right"
   linter:
@@ -33,5 +39,25 @@
   "seti-syntax": {}
   "seti-ui": {}
   term3: {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  "tree-view-filter":
+    globalFilter: "!.DS_Store"
+    liveUpdate: true
   welcome:
     showOnStartup: false
+".fixed.fortran.source":
+  editor:
+    tabLength: 4
+".fortran.free.source":
+  editor:
+    tabLength: 4
+".fortran.modern.source":
+  editor:
+    tabLength: 4
+".fortran.preprocessor.source":
+  editor:
+    tabLength: 4
+".fortran.punchcard.source":
+  editor:
+    tabLength: 4

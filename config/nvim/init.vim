@@ -87,6 +87,8 @@ let g:vim_markdown_folding_disabled=1
 " プラグイン
 call plug#begin('~/.config/nvim/plugged')
 Plug 'Shougo/denite.nvim'
+Plug 'Shougo/deoplete.nvim'
+Plug 'zchee/deoplete-go', { 'do': 'make'}
 Plug 'scrooloose/nerdtree'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'bronson/vim-trailing-whitespace'
@@ -113,6 +115,32 @@ else
     colorscheme desert
 endif
 
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
+
+" neocomplete like
+set completeopt+=noinsert
+" deoplete.nvim recommend
+set completeopt+=noselect
+
+" Path to python interpreter for neovim
+let g:python3_host_prog  = '/Users/tamrin/.anyenv/envs/pyenv/shims/python3'
+" Skip the check of neovim module
+let g:python3_host_skip_check = 1
+
+" deoplete settings
+let g:deoplete#enable_at_startup = 1
+
+let g:deoplete#enable_smart_case = 1
+let g:neocomplete#enable_underbar_completion = 1
+
+" deoplete-go settings
+let g:deoplete#sources#go#align_class = 1
+let g:deoplete#sources#go#package_dot = 1
+let g:deoplete#sources#go#gocode_binary = $GOPATH.'/bin/gocode'
+let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
+let g:deoplete#sources#go#use_cache = 1
+
 " go
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
@@ -120,6 +148,7 @@ let g:go_highlight_fields = 1
 let g:go_highlight_types = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
+let g:go_fmt_command = "goimports"
 
 " indent guide
 let g:indent_guides_enable_on_vim_startup=1
@@ -128,9 +157,6 @@ let g:indent_guides_auto_colors=0
 let g:indent_guides_guide_size=4
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=233
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=234
-
-" depelete
-let g:deoplete#enable_at_startup = 1
 
 " Markdown プレビューのための設定
 au BufRead, BufNewFile *.md set filetype=markdown
