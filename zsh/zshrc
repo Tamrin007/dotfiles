@@ -7,12 +7,12 @@ if [ -d ${HOME}/Dropbox ] ; then
 fi
 
 zplug "zsh-users/zsh-history-substring-search"
-zplug "plugins/git", from:oh-my-zsh, if:"(( $+commands[git] ))", nice:10
 zplug "zsh-users/zsh-syntax-highlighting", nice:10
-zplug "plugins/golang", from:oh-my-zsh, nice:10
+zplug "plugins/golang", from:oh-my-zsh
 zplug "mafredri/zsh-async"
 zplug "sindresorhus/pure", nice:10
 zplug "zsh-users/zsh-completions"
+zplug "glidenote/hub-zsh-completion"
 zplug "Tarrasch/zsh-bd"
 zplug "motemen/ghq", \
     from:gh-r, \
@@ -22,6 +22,10 @@ zplug "junegunn/fzf-bin", \
     from:gh-r, \
     as:command, \
     rename-to:fzf, \
+    use:"*darwin*amd64*"
+zplug "github/hub", \
+    from:gh-r, \
+    as:command, \
     use:"*darwin*amd64*"
 zplug "mollifier/anyframe"
 
@@ -91,10 +95,6 @@ export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46
 # ファイル補完候補に色を付ける
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
-# zsh-completions 読み込み
-fpath=(/usr/local/share/zsh-completions $fpath)
-autoload -Uz compinit; compinit
-
 #cdを打ったら自動的にlsを打ってくれる関数
 function cd(){
     builtin cd $@ && ls -G;
@@ -118,6 +118,10 @@ alias mv='mv -i'
 alias mkdir='mkdir -p'
 alias ls='ls -G'
 alias af='anyframe-widget-select-widget'
+if builtin command -v hub > /dev/null; then
+    alias git='hub'
+    compdef hub=git
+fi
 
 # Pathes
 export XDG_CONFIG_HOME=~/.config
@@ -142,8 +146,6 @@ export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="$HOME/Documents/nand2tetris/tools:$PATH"
 alias HardwareSimulator='HardwareSimulator.sh'
 
-# The next line updates PATH for the Google Cloud SDK.
-source '/Users/tamrin/Downloads/google-cloud-sdk/path.zsh.inc'
-
-# The next line enables shell command completion for gcloud.
-source '/Users/tamrin/Downloads/google-cloud-sdk/completion.zsh.inc'
+# zsh-completions 読み込み
+#fpath=(~/.zplug/repos/zsh-users/zsh-completions/src $fpath)
+autoload -Uz compinit && compinit -u
