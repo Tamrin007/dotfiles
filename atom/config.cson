@@ -1,10 +1,13 @@
 "*":
+  Ensime:
+    sbtExec: "/usr/local/bin/sbt"
   "atom-beautify":
     general:
       _analyticsUserId: "6ddbde88-b083-4f18-94ee-abf676be7f8e"
     html: {}
   "autoclose-html": {}
   core:
+    closeEmptyWindows: false
     packagesWithKeymapsDisabled: []
     telemetryConsent: "limited"
     themes: [
@@ -13,10 +16,9 @@
     ]
   editor:
     fontFamily: "Source Han Code JP"
-    fontSize: 16
+    fontSize: 15
     invisibles: {}
     showInvisibles: true
-    tabLength: 4
     tabType: "soft"
   "exception-reporting":
     userId: "cafebedf-35aa-bf8f-7835-5979a9101d7d"
