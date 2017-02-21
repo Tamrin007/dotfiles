@@ -86,12 +86,12 @@ let g:vim_markdown_folding_disabled=1
 
 " プラグイン
 call plug#begin('~/.config/nvim/plugged')
+Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'Shougo/denite.nvim'
 Plug 'Shougo/deoplete.nvim'
 Plug 'zchee/deoplete-go', { 'do': 'make'}
 Plug 'scrooloose/nerdtree'
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'bronson/vim-trailing-whitespace'
 Plug 'Townk/vim-autoclose'
 Plug 'tpope/vim-endwise'
 Plug 'itchyny/lightline.vim'
@@ -99,6 +99,7 @@ Plug 'othree/html5.vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'trusktr/seti.vim'
+Plug 'nicholasc/vim-seti'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'honza/vim-snippets'
 Plug 'airblade/vim-gitgutter'
@@ -106,6 +107,8 @@ Plug 'plasticboy/vim-markdown'
 Plug 'kannokanno/previm'
 Plug 'tyru/open-browser.vim'
 Plug 'fatih/vim-go'
+Plug 'vim-gosh'
+Plug 'aharisu/vim_goshrepl'
 call plug#end()
 
 " colorscheme
@@ -157,6 +160,9 @@ let g:indent_guides_auto_colors=0
 let g:indent_guides_guide_size=4
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=233
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=234
+
+" GoshREPL
+vmap <CR> <Plug>(gosh_repl_send_block)
 
 " Markdown プレビューのための設定
 au BufRead, BufNewFile *.md set filetype=markdown

@@ -120,6 +120,7 @@ alias mkdir='mkdir -p'
 alias ls='ls -G'
 alias af='anyframe-widget-select-widget'
 alias be='bundle exec'
+alias gosh='rlwrap gosh'
 if builtin command -v hub > /dev/null; then
     alias git='hub'
     compdef hub=git
@@ -139,11 +140,8 @@ fi
 
 export GOPATH=$HOME/ghq
 export PATH=$PATH:$GOPATH/bin
-export GOROOT=$HOME/.anyenv/envs/goenv/versions/1.7.4
-export PATH=$PATH:$GOROOT/bin
+export GOROOT=$HOME/.anyenv/envs/goenv/versions/1.8.0/
 export PATH=/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH
-
-function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
 export PATH="$HOME/Documents/nand2tetris/tools:$PATH"
 alias HardwareSimulator='HardwareSimulator.sh'
@@ -151,3 +149,4 @@ alias HardwareSimulator='HardwareSimulator.sh'
 # zsh-completions 読み込み
 #fpath=(~/.zplug/repos/zsh-users/zsh-completions/src $fpath)
 autoload -Uz compinit && compinit -u
+function gi() { curl http://www.gitignore.io/api/$@ ;}

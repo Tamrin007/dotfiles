@@ -2,6 +2,9 @@
   Ensime:
     sbtExec: "/usr/local/bin/sbt"
   "atom-beautify":
+    cpp:
+      beautify_on_save: true
+      configPath: "~/.uncrustify.cfg"
     general:
       _analyticsUserId: "6ddbde88-b083-4f18-94ee-abf676be7f8e"
     html: {}
@@ -16,7 +19,6 @@
     ]
   editor:
     fontFamily: "Source Han Code JP"
-    fontSize: 15
     invisibles: {}
     showInvisibles: true
     tabType: "soft"
@@ -30,6 +32,8 @@
     panelInitialVisible: false
   "go-imports": {}
   "go-plus":
+    config:
+      gopath: "~/ghq"
     currentPanelHeight: "16.55629139072848vh"
     panelDisplayMode: "closed"
   godef:
@@ -39,7 +43,8 @@
   "save-session":
     dataSaveFolder: "/Users/tamrin/.atom/packages/save-session/projects"
   "seti-syntax": {}
-  "seti-ui": {}
+  "seti-ui":
+    font: "Default Atom Font"
   term3: {}
   "tree-view":
     hideVcsIgnoredFiles: true
