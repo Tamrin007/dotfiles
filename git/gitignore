@@ -1,6 +1,4 @@
-# Created by https://www.gitignore.io/api/gitf,macos
-
-#!! ERROR: gitf is undefined. Use list command to see defined gitignore types !!#
+# Created by https://www.gitignore.io/api/macos
 
 ### macOS ###
 *.DS_Store
