@@ -8,7 +8,6 @@
 
 - link:
     ~/.config/nvim: config/nvim
-    ~/.atom: atom
     ~/.slate: slate/slate
     ~/.zshrc: zsh/zshrc
     ~/.gitconfig: git/gitconfig
