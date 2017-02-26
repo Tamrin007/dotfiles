@@ -7,8 +7,8 @@
 - clean: ['~', '~/.config']
 
 - link:
-    ~/.config/nvim: config/nvim
-    ~/.config/fish: config/fish
+    ~/.config/nvim: nvim
+    ~/.config/fish: fish
     ~/.slate: slate/slate
     ~/.gitconfig: git/gitconfig
     ~/.gitignore: git/gitignore
