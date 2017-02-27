@@ -128,18 +128,6 @@ set mousemodel=popup
 let $NVIM_TUI_ENABLE_TRUE_COLOR = 1
 let no_buffers_nemu             = 1
 
-" Status bar
-set laststatus=2
-
-" Use modeline
-set modeline
-set modelines=10
-
-set title
-set titleold="Terminal"
-set titlestring=%F
-set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)
-
 " Search mapings
 nnoremap n nzzzv
 nnoremap N Nzzzv
