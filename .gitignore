@@ -46,3 +46,8 @@ npm-debug.log
 
 ### neovim ###
 config/nvim/plugged/
+
+### fish ###
+fish/completions
+fish/fishd.*
+fish/functions
