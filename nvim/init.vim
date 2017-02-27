@@ -187,10 +187,10 @@ nnoremap <C-l> <C-w>l
 xmap ga <Plug>(EasyAlign)
 
 " vim-go
-autocmd FileType go nmap <leader>r <Plug>(go-run)
-autocmd FileType go nmap <leader>b <Plug>(go-build)
-autocmd FileType go nmap <leader>t <Plug>(go-test)
-autocmd FileType go nmap <leader>de <Plug>(go-def-split)
-autocmd FileType go nmap <leader>do <Plug>(go-doc-split)
+autocmd FileType go nmap <Leader>r <Plug>(go-run)
+autocmd FileType go nmap <Leader>b <Plug>(go-build)
+autocmd FileType go nmap <Leader>t <Plug>(go-test)
+autocmd FileType go nmap <Leader>de <Plug>(go-def-split)
+autocmd FileType go nmap <Leader>do <Plug>(go-doc-split)
 autocmd FileType go nmap <Leader>dob <Plug>(go-doc-browser)
 
