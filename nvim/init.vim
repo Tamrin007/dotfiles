@@ -32,7 +32,6 @@ Plug 'junegunn/vim-easy-align'
 Plug 'neomake/neomake'
 autocmd! BufWritePost * Neomake
 Plug 'tpope/vim-fugitive'
-Plug 'skywind3000/asyncrun.vim'
 Plug 'editorconfig/editorconfig-vim'
 " Language
 Plug 'fatih/vim-go', { 'for': 'go' }
