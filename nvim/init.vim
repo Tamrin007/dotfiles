@@ -19,6 +19,7 @@ endif
 
 " Plugin list
 call plug#begin('~/.local/share/nvim/plugged')
+Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'tpope/vim-commentary'
@@ -69,6 +70,11 @@ let g:go_highlight_build_constraints = 1
 let g:go_fmt_command                 = "goimports"
 let g:go_term_mode                   = "split"
 let g:go_term_enabled                = 1
+
+" airline
+let g:airline_powerline_fonts = 1
+let g:airline_extensions = []
+set laststatus=2
 
 " General Settings
 filetype plugin indent on
