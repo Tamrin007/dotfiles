@@ -29,8 +29,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'Yggdroot/indentLine'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'junegunn/vim-easy-align'
-Plug 'benekastah/neomake', { 'on': 'Neomake' }
-autocmd BufWritePost * Neomake
+Plug 'neomake/neomake'
+autocmd! BufWritePost * Neomake
 Plug 'tpope/vim-fugitive'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'editorconfig/editorconfig-vim'
