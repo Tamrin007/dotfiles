@@ -177,6 +177,7 @@ nnoremap <C-l> <C-w>l
 
 " vim-easy-align
 xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
 
 " vim-go
 autocmd FileType go nmap <Leader>r <Plug>(go-run)
