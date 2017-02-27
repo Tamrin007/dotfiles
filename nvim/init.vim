@@ -33,6 +33,7 @@ Plug 'neomake/neomake'
 autocmd! BufWritePost * Neomake
 Plug 'tpope/vim-fugitive'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'trusktr/seti.vim'
 " Language
 Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoInstallBinaries' }
 Plug 'zchee/deoplete-go', { 'do': 'make'}
@@ -74,6 +75,9 @@ let g:go_term_enabled                = 1
 let g:airline_powerline_fonts = 1
 let g:airline_extensions = []
 set laststatus=2
+
+" Enable seti colorscheme
+colorscheme seti
 
 " General Settings
 filetype plugin indent on
