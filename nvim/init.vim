@@ -71,14 +71,6 @@ let g:go_fmt_command                 = "goimports"
 let g:go_term_mode                   = "split"
 let g:go_term_enabled                = 1
 
-" airline
-let g:airline_powerline_fonts = 1
-let g:airline_extensions = []
-set laststatus=2
-
-" Enable seti colorscheme
-colorscheme seti
-
 " General Settings
 filetype plugin indent on
 set fileformats=unix,dos,mac
@@ -131,6 +123,12 @@ set number
 set mousemodel=popup
 let $NVIM_TUI_ENABLE_TRUE_COLOR = 1
 let no_buffers_nemu             = 1
+" airline
+let g:airline_powerline_fonts = 1
+let g:airline_extensions = []
+set laststatus=2
+let g:airline_theme='oceanicnext'
+
 
 " Search mapings
 nnoremap n nzzzv
