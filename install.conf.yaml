@@ -2,15 +2,15 @@
     link:
         create: true
         relink: true
-        force: true
+        force:  true
 
 - clean: ['~', '~/.config']
 
 - link:
     ~/.config/nvim: nvim
     ~/.config/fish: fish
-    ~/.slate: slate/slate
-    ~/.gitconfig: git/gitconfig
-    ~/.gitignore: git/gitignore
-    ~/.tmux.conf: tmux/tmux.conf
-    ~/.zshrc: zsh/zshrc
+    ~/.slate:       slate/slate
+    ~/.gitconfig:   git/gitconfig
+    ~/.gitignore:   git/gitignore
+    ~/.tmux.conf:   tmux/tmux.conf
+    ~/.zshrc:       zsh/zshrc
