@@ -72,6 +72,7 @@ let g:go_term_mode                   = "split"
 let g:go_term_enabled                = 1
 
 " General Settings
+language C
 filetype plugin indent on
 set fileformats=unix,dos,mac
 set showcmd
