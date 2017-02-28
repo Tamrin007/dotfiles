@@ -122,10 +122,11 @@ syntax on
 set ruler
 set number
 set mousemodel=popup
-let no_buffers_nemu             = 1
 if (has("termguicolors"))
  set termguicolors
 endif
+let no_buffers_nemu = 1
+
 " airline
 let g:airline_powerline_fonts = 1
 let g:airline_extensions = []
