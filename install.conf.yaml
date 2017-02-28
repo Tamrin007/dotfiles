@@ -13,3 +13,4 @@
     ~/.gitconfig: git/gitconfig
     ~/.gitignore: git/gitignore
     ~/.tmux.conf: tmux/tmux.conf
+    ~/.zshrc: zsh/zshrc
