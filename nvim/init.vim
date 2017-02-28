@@ -33,7 +33,7 @@ Plug 'neomake/neomake'
 autocmd! BufWritePost * Neomake
 Plug 'tpope/vim-fugitive'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'trusktr/seti.vim'
+Plug 'mhartington/oceanic-next'
 " Language
 Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoInstallBinaries' }
 Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make' }
@@ -130,6 +130,9 @@ let g:airline_extensions = []
 set laststatus=2
 let g:airline_theme='oceanicnext'
 
+" Enable colorscheme
+colorscheme OceanicNext
+hi VertSplit guibg=#151515 guifg=#151515
 
 " Search mapings
 nnoremap n nzzzv
