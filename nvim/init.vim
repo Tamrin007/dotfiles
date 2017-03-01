@@ -39,6 +39,7 @@ Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoInstallBinaries' }
 Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make' }
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'fishbullet/deoplete-ruby', { 'for': 'ruby' }
+Plug 'dag/vim-fish', { 'for': 'fish' }
 call plug#end()
 
 " Plugin Settings
