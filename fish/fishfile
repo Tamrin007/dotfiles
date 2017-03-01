@@ -1,6 +1,7 @@
 fisherman/await
 edc/bass
 0rax/fish-bd
+fisherman/docker-completion
 fisherman/fzf
 fisherman/get
 fisherman/getopts
