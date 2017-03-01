@@ -30,6 +30,9 @@ end
 if command -s nvim > /dev/null
     alias vim 'nvim'
 end
+if command -s hub > /dev/null
+    eval (hub alias -s)
+end
 
 # Start tmux
 function start_tmux
