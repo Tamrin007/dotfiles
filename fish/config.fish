@@ -7,7 +7,7 @@ end
 # Set GOPAHT, GOROOT
 if command -s go > /dev/null
     set -x GOPATH $HOME/ghq
-    set -x PATH "$GOPATH/bin" $PATH
+    set -x PATH $GOPATH/bin $PATH
     set -x GOROOT $HOME/.anyenv/envs/goenv/versions/1.8.0
     set -x GOBIN $GOPATH/bin
 end
@@ -37,7 +37,7 @@ end
 # Start tmux
 function start_tmux
     if command -s tmux > /dev/null
-        if test -z "$TMUX" ; and test -z $TERMINAL_CONTEXT
+        if test -z "$TMUX"; and test -z $TERMINAL_CONTEXT
             tmux -2 attach; or tmux -2 new-session
         end
     end
