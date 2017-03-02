@@ -1,0 +1,20 @@
+"*":
+  core:
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "oceanic-next"
+    ]
+  editor:
+    fontFamily: "Source Han Code JP"
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabLength: 4
+    tabType: "soft"
+  "exception-reporting":
+    userId: "7128b8e4-b134-46e6-a6c5-b05713ad3e30"
+  "save-session":
+    dataSaveFolder: "/Users/tamrin/.atom/packages/save-session/projects"
+  welcome:
+    showOnStartup: false
