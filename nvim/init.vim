@@ -30,7 +30,6 @@ Plug 'Yggdroot/indentLine'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'junegunn/vim-easy-align'
 Plug 'neomake/neomake'
-autocmd! BufWritePost * Neomake
 Plug 'tpope/vim-fugitive'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'mhartington/oceanic-next'
@@ -57,6 +56,7 @@ set completeopt+=noinsert
 let g:indentLine_color_term = 239
 
 " neomake
+Plug 'mhartington/oceanic-next'
 let g:neomake_error_sign        = {'text': '>>', 'texthl': 'Error'}
 let g:neomake_warning_sign      = {'text': '>>',  'texthl': 'Todo'}
 let g:neomake_go_enabled_makers = ['golint', 'govet', 'errcheck']
