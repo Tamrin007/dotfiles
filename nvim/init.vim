@@ -127,6 +127,7 @@ if (has("termguicolors"))
  set termguicolors
 endif
 let no_buffers_nemu = 1
+hi VertSplit guibg=#151515 guifg=#151515
 
 " airline
 let g:airline_powerline_fonts = 1
@@ -136,7 +137,6 @@ let g:airline_theme='oceanicnext'
 
 " Enable colorscheme
 colorscheme OceanicNext
-hi VertSplit guibg=#151515 guifg=#151515
 
 " Search mapings
 nnoremap n nzzzv
