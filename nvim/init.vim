@@ -127,7 +127,7 @@ if (has("termguicolors"))
  set termguicolors
 endif
 let no_buffers_nemu = 1
-hi VertSplit guibg=#151515 guifg=#151515
+autocmd ColorScheme * highlight VertSplit ctermbg=234 ctermfg=234 guibg=#1A1A1A guifg=#1A1A1A
 
 " airline
 let g:airline_powerline_fonts = 1
