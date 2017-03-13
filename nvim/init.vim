@@ -128,6 +128,7 @@ if (has("termguicolors"))
 endif
 let no_buffers_nemu = 1
 autocmd ColorScheme * highlight VertSplit ctermbg=234 ctermfg=234 guibg=#1A1A1A guifg=#1A1A1A
+autocmd ColorScheme * highlight Error ctermbg=1 guibg=#EC5f67
 
 " airline
 let g:airline_powerline_fonts = 1
