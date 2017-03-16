@@ -2,16 +2,16 @@ atom-beautify@0.29.17
 atom-clock@0.1.6
 autoclose-html@0.23.0
 autocomplete-paths@1.0.5
-autocomplete-plus@2.34.2
+autocomplete-plus@2.35.0
 autocomplete-ruby@0.2.6
 go-debug@1.1.0
-go-plus@5.3.2
+go-plus@5.3.3
 go-signature-statusbar@1.2.0
 highlight-selected@0.12.0
 hyperclick@0.0.40
-linter@1.11.23
+linter@2.1.0
 oceanic-next@1.0.0
 save-session@0.15.7
-seti-icons@1.4.2
+seti-icons@1.4.3
 vim-mode-plus@0.84.1
 
