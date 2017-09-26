@@ -1,4 +1,9 @@
 "*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "27d0bbc4-1547-40f1-8172-554f7c791803"
+    python:
+      default_beautifier: "yapf"
   core:
     telemetryConsent: "no"
     themes: [
@@ -17,7 +22,19 @@
   "go-plus":
     config:
       gopath: "~/ghq"
+  "linter-eslint":
+    scopes: [
+      "source.js"
+      "source.jsx"
+      "source.js.jsx"
+      "source.babel"
+      "source.js-semantic"
+      "text.html.vue"
+    ]
+  "linter-ui-default": {}
   "save-session":
     dataSaveFolder: "/Users/tamrin/.atom/packages/save-session/projects"
+  "tree-view":
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
