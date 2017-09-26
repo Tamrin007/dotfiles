@@ -6,5 +6,6 @@ fisherman/fzf
 fisherman/get
 fisherman/getopts
 decors/fish-ghq
+lukaszlenart/hub-fish-completion
 fisherman/last_job_id
 oh-my-fish/theme-nai

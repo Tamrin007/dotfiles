@@ -19,14 +19,14 @@
 # Load anyenv & envs
 if test -d $HOME/.anyenv/
     set -x PATH $PATH $HOME/.anyenv/bin
-    anyenv init - | source
+    status --is-interactive; and source (anyenv init -|psub)
 end
 
 # Set GOPAHT, GOROOT
 if command -s go > /dev/null
     set -x GOPATH $HOME/ghq
     set -x PATH $GOPATH/bin $PATH
-    set -x GOROOT $HOME/.anyenv/envs/goenv/versions/1.8.0
+    set -x GOROOT $HOME/.anyenv/envs/goenv/versions/1.8.3
     set -x GOBIN $GOPATH/bin
 end
 
