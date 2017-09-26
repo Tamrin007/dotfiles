@@ -39,6 +39,10 @@ Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make' }
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'fishbullet/deoplete-ruby', { 'for': 'ruby' }
 Plug 'dag/vim-fish', { 'for': 'fish' }
+Plug 'othree/html5.vim', { 'for': 'html' }
+Plug 'mattn/emmet-vim', { 'for': 'html' }
+Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'html'] }
+Plug 'udalov/kotlin-vim', { 'for': 'kotlin' }
 call plug#end()
 
 " Plugin Settings
@@ -59,7 +63,8 @@ let g:indentLine_color_term = 239
 autocmd! BufWritePost * Neomake
 let g:neomake_error_sign        = {'text': '>>', 'texthl': 'Error'}
 let g:neomake_warning_sign      = {'text': '>>',  'texthl': 'Todo'}
-let g:neomake_go_enabled_makers = ['golint', 'govet', 'errcheck']
+let g:neomake_go_enabled_makers = ['golint', 'govet']
+let g:neomake_javascript_enabled_makers = ['eslint']
 
 " vim-go
 let g:go_highlight_functions         = 1
@@ -73,7 +78,7 @@ let g:go_term_mode                   = "split"
 let g:go_term_enabled                = 1
 
 " General Settings
-language C
+language message en_US
 filetype plugin indent on
 set fileformats=unix,dos,mac
 set showcmd
