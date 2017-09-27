@@ -37,8 +37,6 @@ end
 if command -s go > /dev/null
     set -x GOPATH $HOME/ghq
     set -x PATH $GOPATH/bin $PATH
-    set -x GOROOT $HOME/.anyenv/envs/goenv/versions/1.8.3
-    set -x GOBIN $GOPATH/bin
 end
 
 # Add npm global bin to $PATH
