@@ -61,6 +61,13 @@ if command -s hub > /dev/null
     eval (hub alias -s)
 end
 
+# wrap brew in brew-file
+function brew
+    if test -e /usr/local/etc/brew-wrap > /dev/null
+        brew-file brew $argv
+    end
+end
+
 # Start tmux
 function start_tmux
     if command -s tmux > /dev/null
