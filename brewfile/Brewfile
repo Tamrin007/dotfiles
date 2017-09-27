@@ -1,0 +1,78 @@
+
+# tap repositories and their packages
+
+tap homebrew/core
+brew autoconf
+brew bash
+brew cmake
+brew curl
+brew fish
+brew fzf
+brew gettext
+brew ghq
+brew git
+brew goenv
+brew jemalloc
+brew libevent
+brew libtermkey
+brew libuv
+brew libvterm
+brew lua@5.1
+brew luajit
+brew mas
+brew msgpack
+brew neovim
+brew node-build
+brew nodenv
+brew openssl
+brew openssl@1.1
+brew pcre2
+brew pkg-config
+brew pyenv
+brew rbenv
+brew readline
+brew reattach-to-user-namespace
+brew ruby-build
+brew tmux
+brew trash
+brew tree
+brew unibilium
+brew wget
+brew xz
+brew yarn --without-node
+
+tap caskroom/fonts
+cask font-source-han-code-jp
+cask font-source-code-pro-for-powerline
+
+tap caskroom/versions
+
+tap caskroom/cask
+cask slack
+cask atom
+cask gogland
+cask visual-studio-code
+cask vlc
+cask kap
+cask karabiner-elements
+cask intellij-idea
+cask google-backup-and-sync
+cask iterm2
+cask dropbox
+cask sublime-text
+cask 1password
+cask firefox
+cask google-chrome
+cask google-japanese-ime
+cask mattr-slate
+
+tap beeftornado/rmtree
+
+tap rcmdnk/file
+brew brew-file
+
+# App Store applications
+appstore 539883307 LINE (5.3.3)
+appstore 1176895641 Spark (1.4.2)
+appstore 557168941 Tweetbot (2.5.3)
+appstore 497799835 Xcode (9.0)
