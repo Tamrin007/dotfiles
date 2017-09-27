@@ -15,11 +15,22 @@
 #                        (UU)
 
 
+# envs init
+if command -s rbenv > /dev/null
+    rbenv init - | source
+end
 
-# Load anyenv & envs
-if test -d $HOME/.anyenv/
-    set -x PATH $PATH $HOME/.anyenv/bin
-    status --is-interactive; and source (anyenv init -|psub)
+if command -s pyenv > /dev/null
+    pyenv init - | source
+    set -x PYENV_ROOT $HOME/.pyenv
+end
+
+if command -s goenv > /dev/null
+    goenv init - | source
+end
+
+if command -s nodenv > /dev/null
+    nodenv init - | source
 end
 
 # Set GOPAHT, GOROOT
