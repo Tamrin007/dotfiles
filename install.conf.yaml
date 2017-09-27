@@ -10,6 +10,7 @@
     ~/.config/nvim/init.vim: nvim/init.vim
     ~/.config/fish/config.fish: fish/config.fish
     ~/.config/fish/fishfile: fish/fishfile
+    ~/.config/brewfile/Brewfile: brewfile/Brewfile
     ~/.slate:       slate/slate
     ~/.gitconfig:   git/gitconfig
     ~/.gitignore:   git/gitignore
