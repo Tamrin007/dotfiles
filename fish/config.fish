@@ -44,6 +44,14 @@ if command -s npm > /dev/null
     set -x PATH $PATH (npm bin -g)
 end
 
+if command -s cargo > /dev/null
+    set -x PATH $PATH "/Users/tamrin/.cargo/bin"
+end
+
+if command -s rustup > /dev/null
+    rustup completions fish > ~/.config/fish/completions/rustup.fish
+end
+
 # Aliases
 alias cp 'cp -i'
 alias mv 'mv -i'
