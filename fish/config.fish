@@ -71,6 +71,9 @@ end
 if command -s colordiff > /dev/null
     alias diff 'colordiff'
 end
+if command -s direnv > /dev/null
+    eval (direnv hook fish)
+end
 
 # wrap brew in brew-file
 function brew
