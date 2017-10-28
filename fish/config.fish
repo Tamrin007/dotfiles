@@ -68,6 +68,9 @@ end
 if command -s hub > /dev/null
     eval (hub alias -s)
 end
+if command -s colordiff > /dev/null
+    alias diff 'colordiff'
+end
 
 # wrap brew in brew-file
 function brew
