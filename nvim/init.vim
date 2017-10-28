@@ -43,6 +43,7 @@ Plug 'othree/html5.vim', { 'for': 'html' }
 Plug 'mattn/emmet-vim', { 'for': 'html' }
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'html'] }
 Plug 'udalov/kotlin-vim', { 'for': 'kotlin' }
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 call plug#end()
 
 " Plugin Settings
