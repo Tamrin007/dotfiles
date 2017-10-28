@@ -5,6 +5,7 @@ tap homebrew/core
 brew autoconf
 brew bash
 brew cmake
+brew colordiff
 brew curl
 brew fish
 brew fzf
@@ -12,27 +13,38 @@ brew gettext
 brew ghq
 brew git
 brew goenv
+brew hugo
 brew jemalloc
+brew jenv
+brew jq
 brew libevent
+brew libssh2
 brew libtermkey
 brew libuv
 brew libvterm
+brew lsof
 brew lua@5.1
 brew luajit
 brew mas
+brew mercurial
 brew msgpack
-brew neovim
+brew neovim --HEAD
 brew node-build
 brew nodenv
+brew oniguruma
 brew openssl
 brew openssl@1.1
 brew pcre2
 brew pkg-config
 brew pyenv
+brew python
 brew rbenv
 brew readline
 brew reattach-to-user-namespace
+brew rsync
 brew ruby-build
+brew rustup-init
+brew sbt
 brew tmux
 brew trash
 brew tree
@@ -41,35 +53,60 @@ brew wget
 brew xz
 brew yarn --without-node
 
+tap caskroom/cask
+cask slack
+cask atom
+cask steam
+cask gogland
+cask teamviewer
+cask visual-studio-code
+cask adobe-air
+cask vlc
+cask kap
+cask appcleaner
+cask karabiner-elements
+cask intellij-idea
+cask google-backup-and-sync
+cask keybase
+cask pritunl
+cask iterm2
+cask dropbox
+cask unity
+cask docker
+cask vagrant
+cask clipy
+cask gimp
+cask scratch
+cask sublime-text
+cask 1password
+cask horndis
+cask firefox
+cask microsoft-office
+cask google-chrome
+cask google-japanese-ime
+cask mattr-slate
+cask ngrok
+cask java
+cask docker-toolbox
+
 tap caskroom/fonts
 cask font-source-han-code-jp
 cask font-source-code-pro-for-powerline
 
 tap caskroom/versions
-
-tap caskroom/cask
-cask slack
-cask atom
-cask gogland
-cask visual-studio-code
-cask vlc
-cask kap
-cask karabiner-elements
-cask intellij-idea
-cask google-backup-and-sync
-cask iterm2
-cask dropbox
-cask sublime-text
-cask 1password
-cask firefox
-cask google-chrome
-cask google-japanese-ime
-cask mattr-slate
+cask firefoxdeveloperedition
+cask java8
 
 tap beeftornado/rmtree
 
+tap go-delve/delve
+brew delve
+
 tap rcmdnk/file
 brew brew-file
+
+# Cask applications
+cask Kitematic
 
 # App Store applications
 appstore 539883307 LINE (5.3.3)
