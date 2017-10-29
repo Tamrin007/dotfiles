@@ -72,6 +72,7 @@ cask pritunl
 cask iterm2
 cask dropbox
 cask unity
+cask visual-studio
 cask docker
 cask vagrant
 cask clipy
