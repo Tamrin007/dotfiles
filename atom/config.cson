@@ -36,5 +36,6 @@
     dataSaveFolder: "/Users/tamrin/.atom/packages/save-session/projects"
   "tree-view":
     hideVcsIgnoredFiles: true
+  "vim-mode-plus": {}
   welcome:
     showOnStartup: false
