@@ -128,6 +128,7 @@ set splitbelow
 syntax on
 set ruler
 set number
+au TermOpen * setlocal nonumber norelativenumber
 set mousemodel=popup
 if (has("termguicolors"))
  set termguicolors
