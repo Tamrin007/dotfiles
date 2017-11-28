@@ -7,11 +7,13 @@ brew bash
 brew cmake
 brew colordiff
 brew curl
+brew dep
 brew fish
 brew fzf
 brew gettext
 brew ghq
 brew git
+brew go
 brew goenv
 brew hugo
 brew jemalloc
@@ -36,6 +38,7 @@ brew openssl
 brew openssl@1.1
 brew pcre2
 brew pkg-config
+brew pv
 brew pyenv
 brew python
 brew rbenv
@@ -57,11 +60,12 @@ tap caskroom/cask
 cask slack
 cask atom
 cask steam
-cask gogland
 cask teamviewer
 cask visual-studio-code
 cask adobe-air
+cask spotify
 cask vlc
+cask skype
 cask kap
 cask appcleaner
 cask karabiner-elements
@@ -69,6 +73,7 @@ cask intellij-idea
 cask google-backup-and-sync
 cask keybase
 cask pritunl
+cask transmission
 cask iterm2
 cask dropbox
 cask unity
@@ -80,6 +85,8 @@ cask gimp
 cask scratch
 cask sublime-text
 cask 1password
+cask discord
+cask goland
 cask horndis
 cask firefox
 cask microsoft-office
@@ -97,6 +104,8 @@ cask font-source-code-pro-for-powerline
 tap caskroom/versions
 cask firefoxdeveloperedition
 cask java8
+
+tap caskroom/versions
 
 tap beeftornado/rmtree
 
