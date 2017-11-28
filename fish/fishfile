@@ -3,6 +3,7 @@ edc/bass
 0rax/fish-bd
 fisherman/docker-completion
 fisherman/fzf
+Tamrin007/fish-fzf-git
 fisherman/get
 fisherman/getopts
 decors/fish-ghq
